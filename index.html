@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="school.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <title>School Website</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="top-bar">
+               <p class="top-text">Have any question?</p>
+               <div class="flex">
+                   <a href="tel:+2349028741416" class="btn-contact"><i class="fas fa-mobile-alt"></i>(234) 902 874 1416</a>
+                   <a href="mailto:caleboluwafemi6@gmail.com" class="btn-contact"><i class="fas fa-at"></i>almater@education.com</a>
+               </div>   
+            </div>
+            <div class="sidebar">
+                <div class="sidebar-logo-container">
+                    <!-- sidebar logo -->
+                    <div class="sidebar-logo-div">
+                        <a href="index.html" class="sidebar-nav-logo">
+                            <img src="https://cdn.prod.website-files.com/627387bf19e7f64639588c5a/6278ed3f4102c508df53671f_Logo-alma-mater%20(1).png" alt="Logo">
+                        </a>
+                    </div>
+                    
+                    <!-- sidebar close button -->
+                    <i class="x-icon" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height=32px" viewBox="0 -960 960 960" width="32px" fill="#ffc10e"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></i>
+                </div>
+            
+                <ul class="sidebar-nav-list">
+                    <li class="sidebar-nav-item"><a href="#Home">Home</a></li>
+                    <li class="sidebar-nav-item"><a href="#Pages">Pages</a></li>
+                    <li class="sidebar-nav-item"><a href="#About">About Us</a></li>
+                    <li class="sidebar-nav-item"><a href="#Courses">Courses</a></li>
+                    <li class="sidebar-nav-item"><a href="#Blog">Blog</a></li>
+                    <li class="sidebar-nav-item"><a href="#Contact">Contact Us</a></li>
+                </ul>
+            
+                <div class="sidebar-search-div">
+                    <form class="sidebar-search-bar">
+                        <input type="text" placeholder="Search..." class="sidebar-search-input">
+                    </form>
+                    <div class="sidebar-contact-links">
+                        <a href="https://instagram.com/calebtife" target="_blank" class="sidebar-contact-details"><i class="fab fa-instagram"></i></a>
+                        <a id="profile-link" href="https://github.com/calebtife" target="_blank" class="sidebar-contact-details"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/tifecaleb" target="_blank" class="sidebar-contact-details"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <nav id="navbar" class="nav">
+            <div class="logo-div">
+                <a href="index.html" class="nav-logo"><img src="https://cdn.prod.website-files.com/627387bf19e7f64639588c5a/6278ed3f4102c508df53671f_Logo-alma-mater%20(1).png" alt="Alma Mater"></a>
+             
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item hideOnMobile"><a href="#Home">Home</a></li>
+                <li class="nav-item hideOnMobile"><a href="#Pages">Pages<i class="fas fa-angle-down"></i>
+                </a></li>
+                <li class="nav-item hideOnMobile"><a href="#About">About Us<i class="fas fa-angle-down"></i>
+                </a></li>
+                <li class="nav-item hideOnMobile"><a href="#Courses">Courses<i class="fas fa-angle-down"></i>
+                </a></li>
+                <li class="nav-item hideOnMobile"><a href="#Blog">Blog</a></li>
+                <li class="nav-item hideOnMobile"><a href="#Contact">Contact Us</a></li>
+             </ul>
+
+             <div class="search-div">
+             <form class="search-bar hideOnMobile">
+                
+                <input type="search" placeholder="Search..." class="search-input">
+             </form>
+             <div class="contact-links hideOnMobile">
+                <a href="https://instagram.com/calebtife" target="_blank" class="btn contact-details"><i class="fab fa-instagram"></i></a>
+                <a id="profile-link" href="https://github.com/calebtife" target="_blank" class="btn contact-details"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/tifecaleb" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i></a> 
+             </div>
+             
+            </div>
+            <div class="hamburger-menu" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#0d369f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+            </nav>
+        </header>
+        <div class="bg-image">
+            <div class="bg-image-wrapper">
+                <p class="excellent">EXCELLENT CHOICE</p>
+                <h2 class="welcome">Welcome to Alma <br> Mater!</h2>
+                <a href="#" class="read">READ MORE</a>
+            </div>
+        </div>
+        <div class="Welcome-section">
+            <h2 class="subheading">
+                <span class="welcome-to">Welcome To</span> <span class="alma-mater">Alma Mater</span>
+            </h2>
+            <div class="underline"></div>
+            <div class="three">
+                <div class="manifesto"><p><img src="gradhouse.png" alt="gradimage"><br><h3 class="img-subheading">Trending Courses</h3><br>Your chance to be a trending expert in IT<br> industries and make a successful career <br>after  completion of our courses.</p>
+                <a href="#" class="Read-more"><h3>+  READ MORE</h3></a></div>
+                <div class="manifesto"><p><img src="gradfile.png" alt=""><br><h3 class="img-subheading">Certified Teachers</h3><br>Your chance to be a trending expert in IT<br> industries and make a successful career <br>after  completion of our courses.</p>
+                    <a href="#" class="Read-more"><h3>+  READ MORE</h3></a></div>
+                    <div class="manifesto"><p><img src="grad cap.png" alt=""><br><h3 class="img-subheading">Books & Library</h3><br>Your chance to be a trending expert in IT<br> industries and make a successful career <br>after  completion of our courses.</p>
+                        <a href="#" class="Read-more"><h3>+  READ MORE</h3></a></div>
+            </div>
+         </div>
+         <div class="section-courses"> 
+            <h2 class="trending"><span class="trending-courses">Trending Courses</span> <span class="for-you">For You</span></h2>
+            <div class="underline"></div>
+            <div class="class-container">
+                <div class="course-group">
+                    <div class="course-box">
+                        <div class="price-tag">$85.00</div>
+                        <div class="image-overlay">
+                            <div class="buy-link"><a href="#">BUY COURSE</a></div>
+                        </div>
+                        <img src="laptop screen.jpg" alt="Course Image">
+                        <div class="course-info">
+                            <h3>Why I use both PHP-storm and sublime text</h3>
+                            <p>Michel Vouge</p>
+                        </div>
+                    </div>
+                    <div class="course-box">
+                        <div class="price-tag" style="color: white; background-color: green;">Free</div>
+                        <div class="image-overlay">
+                            <div class="buy-link"><a href="#">BUY COURSE</a></div>
+                        </div>
+                        <img src="art.jpg" alt="Course Image">
+                        <div class="course-info">
+                            <h3>History of art, architecture & design</h3>
+                            <p>Sarah Johnson</p>
+                        </div>
+                    </div>
+                    <div class="course-box">
+                        <div class="price-tag">$100</div>
+                        <div class="image-overlay">
+                            <div class="buy-link"><a href="#">BUY COURSE</a></div>
+                        </div>
+                        <img src="school girl.jpg" alt="Course Image">
+                        <div class="course-info">
+                            <h3>Iberian languages</h3>
+                            <p>Leslie Alexander</p>
+                        </div>
+                    </div>
+                    <div class="course-box">
+                        <div class="price-tag">$55.00</div>
+                        <div class="image-overlay">
+                            <div class="buy-link"><a href="#">BUY COURSE</a></div>
+                        </div>
+                        <img src="communication.jpg" alt="Course Image">
+                        <div class="course-info">
+                            <h3>Communication & Media studies</h3>
+                            <p>Michel Vouge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="#" class="view-all-btn">View All Courses</a>
+            </div>
+        </div>
+
+        <!-- newlettter section -->
+        <div class="newletter-section">
+            <div class="background-wrapper">
+            <div class="bg-color">
+                <div class="stats">
+                    <p class="stat-item stat-1">90% <br><span class="grad-span">GRADUATION</span></p>
+                    <p class="stat-item stat-2">30 <br><span class="grad-span">MAJORS</span></p>
+                </div>
+                <div class="stats">
+                    <p class="stat-item stat-3">68 <br><span class="grad-span">CLASS ROOMS</span></p>
+                    <p class="stat-item stat-4">3K <br><span class="grad-span">GRADUATION</span></p>
+                </div>
+            </div>
+            <div class="landscape-background">
+                <div class="newletter-form">
+                    <h2 class="form-heading">Newletter.</h2>
+                    <form action="" class="email-form">
+                        <input type="email" id="emailField" placeholder="Your email" required>
+                        <button id="submitButton" type="button" onclick="handleSubmit()">Submit</button>
+                    </form>
+                    <div class="message" id="thankYouMessage">Thank you! Your submission has been received!</div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+            <!-- testimony sectioon -->
+        <div class="testimony-section">
+             <h2 class="trending"><span class="trending-courses">We've Proud </span><span class="for-you">Trusted Students</span></h2>
+             <div class="underline"></div>
+            <div class="testimony-container">
+                <div class="testimony-group">
+                    <div class="testimony">
+                       <p class="comment">"Been using the theme for 4-5 years or more, should've given a review earlier. I'm not a web design pro but I know the basics. Whenever I run into a little trouble TrueThemes is always super quick and helpful."
+                       </p> 
+                       <div class="commentator">
+                        <img src="whiteman.jpeg" alt="RR">
+                        <div class="commentator-details"> 
+                            <h3 class="commentator-name">Ronald Richards</h3>
+                            <p>Designer, Facebook</p>
+                        </div>
+                       </div>
+                    </div>
+
+                    <div class="testimony">
+                        <p class="comment">"Simple and elegant with a host of options. Easy to set up and provides a beautiful professional looking end product."
+                        </p> 
+                        <div class="commentator">
+                         <img src="walter.jpg" alt="WW">
+                         <div class="commentator-details">
+                             <h3 class="commentator-name">Walter White</h3>
+                             <p>CEO, Quickly</p>
+                         </div>
+                        </div>
+                     </div>
+
+                     <div class="testimony">
+                        <p class="comment">"I couldn't thank enough these guys for helping me with all my questions, I might have given them lots of emails, but they always replied on time. Special thanks goes to Mariia."
+                        </p> 
+                        <div class="commentator">
+                         <img src="tems.jpeg" alt="TEMS">
+                         <div class="commentator-details">
+                             <h3 class="commentator-name" >Temilade Openiyi</h3>
+                             <p>MD, Grammy</p>
+                         </div>
+                        </div>
+                     </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <section class="teamSection-background">
+            <div class="overlay"></div>
+            <div class="team-section">
+                <h2 class="trending"><span class="trending-courses">Meet The</span><span class="for-you"> Professionals</span></h2>
+                <div class="underline"></div>
+                <div class="team-wrapper">
+                    <div class="team-container1">
+                        <!-- Selena Gomez Card -->
+                        <div class="team-profile">
+                            <div class="profile-image">
+                                <img src="team1.jpeg" alt="Selena">
+                                <div class="profile-contacts">
+                                    <a href="https://instagram.com/calebtife" target="_blank" class="profile-contacts-icon"><i class="fab fa-instagram"></i></a>
+                                    <a id="profile-link" href="https://github.com/calebtife" target="_blank" class="profile-contacts-icon"><i class="fab fa-github"></i></a>
+                                    <a href="https://x.com/tifecaleb" target="_blank" class="profile-contacts-icon"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" class="profile-contacts-icon"><i class="fab fa-pinterest"></i></a>
+                                    <a href="#" target="_blank" class="profile-contacts-icon"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <div class="profile-bio">
+                                <p class="job-title">Design Concept</p>
+                                <h2 class="profile-name">Selena Gomez</h2>
+                                <p class="profile-writeup">Your chance to be a trending expert in IT industries and make a successful career after completion of our courses.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Thomas Shelby Card (Fixed) -->
+                        <div class="team-profile">
+                            <div class="profile-image">
+                                <img src="team2.jpeg" alt="Thomas">
+                                <div class="profile-contacts">
+                                    <a href="https://instagram.com/calebtife" target="_blank" class="profile-contacts-icon"><i class="fab fa-instagram"></i></a>
+                                    <a id="profile-link" href="https://github.com/calebtife" target="_blank" class="profile-contacts-icon"><i class="fab fa-github"></i></a>
+                                    <a href="https://x.com/tifecaleb" target="_blank" class="profile-contacts-icon"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" class="profile-contacts-icon"><i class="fab fa-pinterest"></i></a>
+                                    <a href="#" target="_blank" class="profile-contacts-icon"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <div class="profile-bio">
+                                <p class="job-title">Design Concept</p>
+                                <h2 class="profile-name">Thomas Shelby</h2>
+                                <p class="profile-writeup">Your chance to be a trending expert in IT industries and make a successful career after completion of our courses.</p>
+                            </div>
+                        </div>
+            
+                        
+                    </div>
+                    <div class="team-container2">
+                        <!-- Brooklyn Simmons Card -->
+                        <div class="team-profile">
+                            <div class="profile-image">
+                                <img src="team3.jpeg" alt="Simmons">
+                                <div class="profile-contacts">
+                                    <a href="https://instagram.com/calebtife" target="_blank" class="profile-contacts-icon"><i class="fab fa-instagram"></i></a>
+                                    <a id="profile-link" href="https://github.com/calebtife" target="_blank" class="profile-contacts-icon"><i class="fab fa-github"></i></a>
+                                    <a href="https://x.com/tifecaleb" target="_blank" class="profile-contacts-icon"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" class="profile-contacts-icon"><i class="fab fa-pinterest"></i></a>
+                                    <a href="#" target="_blank" class="profile-contacts-icon"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <div class="profile-bio">
+                                <p class="job-title">CEO</p>
+                                <h2 class="profile-name">Brooklyn Simmons</h2>
+                                <p class="profile-writeup">Your chance to be a trending expert in IT industries and make a successful career after completion of our courses.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Jessica Pinkman Card (Fixed) -->
+                        <div class="team-profile">
+                            <div class="profile-image">
+                                <img src="team4.jpeg" alt="Jessica">
+                                <div class="profile-contacts">
+                                    <a href="https://instagram.com/calebtife" target="_blank" class="profile-contacts-icon"><i class="fab fa-instagram"></i></a>
+                                    <a id="profile-link" href="https://github.com/calebtife" target="_blank" class="profile-contacts-icon"><i class="fab fa-github"></i></a>
+                                    <a href="https://x.com/tifecaleb" target="_blank" class="profile-contacts-icon"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" class="profile-contacts-icon"><i class="fab fa-pinterest"></i></a>
+                                    <a href="#" target="_blank" class="profile-contacts-icon"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <div class="profile-bio">
+                                <p class="job-title">IT Expert</p>
+                                <h2 class="profile-name">Jessica Pinkman</h2>
+                                <p class="profile-writeup">Your chance to be a trending expert in IT industries and make a successful career after completion of our courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- view all button -->
+                     <div class="membersBtn">
+                         <a href="#" class="view-members">VIEW ALL MEMBERS</a>
+                     </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- pricing section -->
+        <section class="pricing-section">
+            <div class="pricing-wrapper">
+                <div class="pricing-header">
+                    <h2 class="pricing-heading">Pricing Table</h2>
+                    <div class="pricing-underline"></div>
+                </div>
+                <div class="pricing-menu">
+                    <div class="standard-container">
+                        <div class="standard-container-top">
+                            <img src="standardClass.png" alt="STANDARD" class="standard-image">
+                            <h4>Standard Class</h4>
+                            <p>20 - 30 STUDENTS</p>
+                        </div>
+                        <div class="standard-container-middle">
+                            <div class="tuition tuition1">
+                                <h2>$20,000</h2>
+                                <p>/SEMESTER</p>
+                            </div>
+                            <div class="tuition tuition2">
+                                <h2>$40,000</h2>
+                                <p>/1 YEAR</p>
+                            </div>
+                            <div class="tuition">
+                                <h2>$70,000</h2>
+                                <p>/2 YEARS</p>
+                            </div>
+                        </div>
+                        <div class="standard-container-bottom">
+                            <a href="#" class="choosePlanBtn">CHOOSE PLAN</a>
+                        </div>
+                    </div>
+
+                    <!-- vip pricing -->
+                    <div class="vip-container">
+                        <div class="standard-container-top">
+                            <img src="vipClass.png" alt="STANDARD" class="standard-image">
+                            <h4>VIP Class</h4>
+                            <p>5 - 10 STUDENTS</p>
+                        </div>
+                        <div class="standard-container-middle">
+                            <div class="tuition tuition1">
+                                <h2>$30,000</h2>
+                                <p>/SEMESTER</p>
+                            </div>
+                            <div class="tuition tuition2">
+                                <h2>$50,000</h2>
+                                <p>/1 YEAR</p>
+                            </div>
+                            <div class="tuition">
+                                <h2>$90,000</h2>
+                                <p>/2 YEARS</p>
+                            </div>
+                        </div>
+                        <div class="standard-container-bottom">
+                            <a href="#" class="vipchoosePlanBtn">CHOOSE PLAN</a>
+                        </div>
+                    </div>
+                    <!-- international pricing -->
+                    <div class="standard-container">
+                        <div class="standard-container-top">
+                            <img src="international class.png" alt="STANDARD" class="standard-image">
+                            <h4>International Class</h4>
+                            <p>20 - 30 STUDENTS</p>
+                        </div>
+                        <div class="standard-container-middle">
+                            <div class="tuition tuition1">
+                                <h2>$20,000</h2>
+                                <p>/SEMESTER</p>
+                            </div>
+                            <div class="tuition tuition2">
+                                <h2>$40,000</h2>
+                                <p>/1 YEAR</p>
+                            </div>
+                            <div class="tuition">
+                                <h2>$70,000</h2>
+                                <p>/2 YEARS</p>
+                            </div>
+                        </div>
+                        <div class="standard-container-bottom">
+                            <a href="#" class="choosePlanBtn">CHOOSE PLAN</a>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+        <!-- image section -->
+        <section class="imageSwiper-section">
+            <div class="image-subheading">
+              <h2>View How <span style="color: #ffc10e;">It Looks</span></h2>
+              <div class="underline"></div>
+            </div>
+          
+            <div class="image-container">
+              <!-- Swiper main container -->
+              <div class="swiper">
+                <!-- Swiper wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide">
+                    <img src="slider1.jpg" alt="Gallery Image 1">
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide">
+                    <img src="slider2.jpg" alt="Gallery Image 2">
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide">
+                    <img src="slider3.jpg" alt="Gallery Image 3">
+                  </div>
+                  <!-- Slide 4 -->
+                  <div class="swiper-slide">
+                    <img src="slider4.jpeg" alt="Gallery Image 4">
+                  </div>
+                  <!-- Slide 5 -->
+                  <div class="swiper-slide">
+                    <img src="slider5.jpg" alt="Gallery Image 5">
+                  </div>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+          
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+          
+              </div>
+            </div>
+          </section>
+          <div class="image-gallery">
+            <img src="gallery1.jpg" alt="Gallery" class="gallery">
+            <img src="gallery2.jpg" alt="Gallery" class="gallery">
+            <img src="gallery3.jpg" alt="Gallery" class="gallery">
+            <img src="gallery4.jpeg" alt="Gallery" class="gallery">
+            <img src="gallery5.jpg" alt="Gallery" class="gallery">
+            <!-- <div class="image-link">Instagram @calebtife</div> -->
+          </div>
+
+          <section class="footer">
+            <div class="contact-section-container">
+                <!-- First container -->
+                <div class="first-container">
+                    <div class="first-container-top">
+                        <a href="index.html" class="footer-logo">
+                            <img src="https://cdn.prod.website-files.com/627387bf19e7f64639588c5a/6278ed3f4102c508df53671f_Logo-alma-mater%20(1).png" alt="Logo">
+                        </a>
+                    </div>
+        
+                    <div class="first-container-body">
+                        <div class="location-wrap">
+                            <p><i class="fas fa-map-marker-alt footer-contact-icon"></i></p>
+                            <p>Grand Conference Hall - 3rd Avenue,<br> New York, USA</p>
+                        </div>
+        
+                        <div class="location-wrap">
+                            <p><i class="fas fa-phone footer-contact-icon"></i>
+                                <a href="tel:+2349028741416" class="footer-contact-link">(234) 902 874 1416</a>
+                            </p>
+                        </div>
+        
+                        <div class="location-wrap">
+                            <p><i class="fas fa-envelope footer-contact-icon"></i>
+                                <a href="mailto:caleboluwafemi6@gmail.com" class="footer-contact-link">info@almamater.com</a>
+                            </p>
+                        </div>
+                    </div>
+        
+                    <div class="first-container-icons">
+                        <a href="#" target="_blank" class="contact-link-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank" class="contact-link-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" class="contact-link-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" target="_blank" class="contact-link-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+        
+                <!-- Second container -->
+                <div class="second-container">
+                    <div class="second-container-top">
+                        <h3>Extra Links</h3>
+                    </div>
+        
+                    <div class="second-container-body">
+                        <div class="pages-link">
+                            <a href="index.html">Home</a>
+                            <a href="#">About Us</a>
+                        </div>
+                        <div class="pages-link">
+                            <a href="#">Courses</a>
+                            <a href="#">FAQ</a>
+                        </div>
+                        <div class="pages-link">
+                            <a href="#">Teachers</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                        <div class="pages-link">
+                            <a href="#">Career</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Third container -->
+                <div class="third-container">
+                    <div class="third-container-top">
+                        <h3>Trending Courses</h3>
+                    </div>
+                    <div class="third-container-body">
+                        <div class="footer-course">
+                            <img src="footer-course1.jpg" alt="Laptop">
+                            <div class="footer-course-title">
+                                <h6>Why I Use Both And Sublime Text</h6>
+                                <p>Michel Vouge</p>
+                            </div>
+                        </div>
+                        <div class="footer-course">
+                            <img src="footer-course2.jpg" alt="image">
+                            <div class="footer-course-title">
+                                <h6>Business & Management Studies</h6>
+                                <p>Isabella Jones</p>
+                            </div>
+                        </div>
+                        <div class="footer-course">
+                            <img src="footer-course3.jpg" alt="image">
+                            <div class="footer-course-title">
+                                <h6>How To Score More Goals</h6>
+                                <p>Marcus Rashford</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="almaMater-footer">
+                <div class="underline-footer"></div>
+                <div class="footer-contents">
+                    <a href="#" target="_blank" class="copyright-icon"><i class="fas fa-copyright"></i></a>
+                    <p class="almaMater">Alma Mater.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <script src="school.js"></script>
+        <!-- swiper src tag -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            // Initialize Swipper
+            const swiper = new Swiper('.swiper', {
+                loop: true, // Enable loop mode
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+                scrollbar: {
+                el: '.swiper-scrollbar',
+                },
+            });
+        </script>
+    </body>
+</html>
